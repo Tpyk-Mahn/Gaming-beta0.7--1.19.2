@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "jaune",
+  "version": "${version}",
+
+  "name": "Gaming Mod",
+  "description": "basically everything in Minecraft is now 5x more frustrating to do. High tier of Gaming guaranted(yes)",
+  "authors": [
+    "@Tpyk_Mahn on Github, Reddit, PMC, Insta, ..."
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/gaming/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.tpykmahn.jaune.JauneJade"
+    ],
+    "client": [
+      "net.tpykmahn.jaune.JauneJadeClient"
+    ]
+  },
+  "mixins": [
+    "jaune.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric-api": "*",
+    "minecraft": "~1.19.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
